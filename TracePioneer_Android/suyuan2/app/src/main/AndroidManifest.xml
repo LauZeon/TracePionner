@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="溯源先锋"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Suyuan"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tempActivity" />
+        <activity android:name=".humiActivity" />
+        <activity android:name=".pHActivity" />
+        <activity android:name=".tank_heightActivity" />
+        <activity android:name=".soil_humiActivity" />
+        <activity android:name=".soil_tempActivity" />
+        <activity android:name=".CO2_Activity" />
+        <activity android:name=".O2_Activity" />
+        <activity android:name=".Mlight_luxActivity2" />
+        <activity android:name=".WiFi_Activity" />
+        <activity android:name=".combustible_gasActivity" />
+    </application>
+
+</manifest>
